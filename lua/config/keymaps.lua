@@ -8,7 +8,7 @@ local t_oopts = { silent = true }
 vim.keymap.set("i", "jj", "<ESC>", { silent = true })
 -- terminal mode
 vim.keymap.set("t", "<ESC>", "<C-\\><C-N>", t_oopts)
-vim.keymap.set("t", "jj", "<C-\\><C-N>", t_oopts)
+-- vim.keymap.set("t", "jj", "<C-\\><C-N>", t_oopts)
 local job_id = 0
 vim.keymap.set("n", "<space>t", function()
     vim.cmd.vnew()
